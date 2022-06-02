@@ -43,13 +43,13 @@ public class HornedHelmetModel extends HumanoidModel<LivingEntity> {
     public static LayerDefinition createLayer() {
         var mesh = HumanoidModel.createMesh(new CubeDeformation(0.0F), 0.0F);
         var root = mesh.getRoot();
-        var horn = new CubeDeformation(0.12F, 0.5F, 0.12F);
+        var horn = new CubeDeformation(0.125F, 0.5F, 0.125F);
         var builder = CubeListBuilder.create();
 
         builder.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.5F));
         builder.texOffs(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F));
-        builder.texOffs(56, 22).addBox(-6.6F, -11.38F, -1.0F, 2.0F, 8.0F, 2.0F, horn);
-        builder.texOffs(56, 22).mirror().addBox(4.6F, -11.38F, -1.0F, 2.0F, 8.0F, 2.0F, horn);
+        builder.texOffs(56, 22).addBox(-6.625F, -11.375F, -1.0F, 2.0F, 8.0F, 2.0F, horn);
+        builder.texOffs(56, 22).mirror().addBox(4.625F, -11.375F, -1.0F, 2.0F, 8.0F, 2.0F, horn);
 
         root.addOrReplaceChild("helmet", builder, PartPose.ZERO);
         // root.addOrReplaceChild("helmet_illager", builder, PartPose.offset(0, 1, 0));
