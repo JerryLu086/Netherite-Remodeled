@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All rights reserved"
+
+
+[[mods]]
+    modId="netherite_remodeled"
+    version="1.18-1.0"
+    displayName="Netherite Remodeled"
+    logoFile="pack.png"
+    authors="JerryLu086"
+    description='''
+Simply changed the model of Netherite Helmet!
+'''
